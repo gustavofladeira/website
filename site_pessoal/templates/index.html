@@ -1,0 +1,276 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Gustavo Ladeira</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/img/favicon.ico' %}" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"></a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="#contact">Contact</a></li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded"
+                            href="{% static 'docs/Currículo - Gustavo Ferreira Ladeira.pdf' %}" target="_blank">CV</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5 rounded-img" src="{% static 'assets/img/portfolio/me.png' %}" alt="..." />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Gustavo Ladeira</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">MSc in Economics | Data Analyst | Data Science |
+                Machine Learning</p>
+        </div>
+    </header>
+
+
+
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+
+                <!-- Real State-->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item mx-auto"
+                        style="border: 1px solid #ccc; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <a href="https://medium.com/@gustavofladeira/alugu%C3%A9is-no-rio-de-janeiro-eb2f5b88e69b"
+                            target="_blank" rel="noopener noreferrer">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/proj_alugueis_rj_v2.png' %}"
+                                alt="Web scraping para dados de aluguéis no Rio de Janeiro" />
+                        </a>
+                        <div style="margin-top: 15px;">
+                            <h5 style="margin-bottom: 0.5rem;">Real State analysis in Rio de Janeiro</h5>
+                            <p style="text-align: justify;">This project employs web scraping techniques to gather
+                                property data from OLX, utilizes a random forest algorithm for classifying properties
+                                into sale or rental categories, and analyzes geographical trends across neighborhoods
+                                through data visualization.</p>
+                        </div>
+                        <!-- Adiciona a frase "(in progress)" em vermelho na parte de baixo -->
+                        <div style="color: red; text-align: center; margin-top: 10px;">
+                            (in progress)
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item mx-auto"
+                        style="border: 1px solid #ccc; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/proj_reeleicao.png' %}"
+                                alt="Web scraping para dados de aluguéis no Rio de Janeiro" />
+                        </a>
+                        <div style="margin-top: 15px;">
+                            <h5 style="margin-bottom: 0.5rem;">Electoral Dynamics in Brazil
+                            </h5>
+                            <p style="text-align: justify;">This project examines the 2020 Brazilian elections, aiming
+                                to build a dataset centered on two main variables: (1) the decision of incumbent mayors
+                                to seek reelection and (2) their success in securing another term.</p>
+                        </div>
+                        <!-- Adiciona a frase "(in progress)" em vermelho na parte de baixo -->
+                        <div style="color: red; text-align: center; margin-top: 10px;">
+                            (in progress)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item mx-auto"
+                        style="border: 1px solid #ccc; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <a href="" target="_blank" rel="noopener noreferrer">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid"
+                                src="{% static 'assets/img/portfolio/proj_statistical_learning.png' %}"
+                                alt="Web scraping para dados de aluguéis no Rio de Janeiro" />
+                        </a>
+                        <div style="margin-top: 15px;">
+                            <h5 style="margin-bottom: 0.5rem;">An Introduction to Statistical Learning: notes and
+                                exercises
+                            </h5>
+                            <p style="text-align: justify;">My personal notes and exercises based on the textbook 'An
+                                Introduction to Statistical Learning'.</p>
+                        </div>
+                        <!-- Adiciona a frase "(in progress)" em vermelho na parte de baixo -->
+                        <div style="color: red; text-align: center; margin-top: 10px;">
+                            (in progress)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FPM Paper -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item mx-auto"
+                        style="border: 1px solid #ccc; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <a href="/static/docs/Intergovernmental Transfers in Hard Times.pdf" target="_blank"
+                            rel="noopener noreferrer">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/proj_fpm.png' %}"
+                                alt="Web scraping para dados de aluguéis no Rio de Janeiro" />
+                        </a>
+                        <div style="margin-top: 15px;">
+                            <h5 style="margin-bottom: 0.5rem;">Transfers in Hard Times: Evidence from Brazilian local
+                                governments in the COVID-19 crisis
+                            </h5>
+                            <p style="text-align: justify;">This article aims to evaluate whether the intergovernmental
+                                transfers impacted the response of Brazilian municipalities to the COVID-19 pandemic.
+                                Employing a Regression Discontinuous Design, we found that higher per capita transfers
+                                had a significant impact in mitigating the number of deaths and serious
+                                hospitalizations.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Masters thesis -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="portfolio-item mx-auto"
+                        style="border: 1px solid #ccc; padding: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                        <a href="static/docs/Dissertação - Gustavo Ferreira Ladeira.pdf" target="_blank"
+                            rel="noopener noreferrer">
+                            <div
+                                class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'assets/img/portfolio/thesis.png' %}"
+                                alt="Web scraping para dados de aluguéis no Rio de Janeiro" />
+                        </a>
+                        <div style="margin-top: 15px;">
+                            <h5 style="margin-bottom: 0.5rem;">Master's thesis
+                            </h5>
+                            <p style="text-align: justify;">This study examines how female representation in municipal
+                                election tickets impacts violence against women from 2009 to 2020. Using a regression
+                                discontinuity design, it finds mixed effects of female leadership on violence,
+                                highlighting the nuanced role of women in political positions and the need for further
+                                research on deputy mayors.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+    </section>
+    <!-- About Section-->
+    <!-- <section class="page-section bg-primary text-white mb-0" id="about"> -->
+    </section>
+
+
+
+    <!-- Footer-->
+    <footer class="footer text-center" id="contact">
+        <div class="container">
+            <!-- <div class="container-fluid"> -->
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        Ribeirão Preto, São Paulo
+                        <br />
+                        Brazil
+                    </p>
+                </div>
+
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Contact</h4>
+                    <p class="lead mb-0">
+                        <a href="mailto:gustavofladeira@gmail.com" style="text-decoration: none;">
+                            <i class="fas fa-envelope" style="margin-right: 8px;"></i>gustavofladeira@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/gustavofladeira/"
+                        target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/gustavofladeira"
+                        target="_blank"><i class="fab fa-fw fa-github"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
